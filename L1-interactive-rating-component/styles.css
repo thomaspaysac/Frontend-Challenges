@@ -1,0 +1,148 @@
+* {
+  font-family: 'Overpass', serif;
+  box-sizing:border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  height:100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin:0;
+  padding:0;
+  font-weight: bold;
+}
+
+.rating-box__main,
+.thanks-box__main {
+  border-radius: 10px;
+  background: radial-gradient(circle at top, rgb(59, 70, 89) 0%, rgb(26, 34, 45) 50%);
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width:90%;
+  height:75%;
+  padding:1.5rem;
+  margin:auto;
+}
+
+.rating-box__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(215, 12%, 29%);
+  width:3rem;
+  height: 3rem;
+  border-radius:50%;
+}
+
+.rating-box__title,
+.thanks-box__title {
+  color:white;
+  margin-top: 1.5rem;
+  vertical-align: middle;
+}
+
+.rating-box__subtext,
+.thanks-box__subtext {
+  color: hsl(217, 12%, 63%);
+  margin: 1rem 0;
+}
+
+.rating-box__ratings {
+  display:flex;
+  justify-content: space-around;
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+}
+
+.rating-box__rating {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(215, 12%, 29%);
+  width:3rem;
+  height:3rem;
+  border-radius:50%;
+  cursor: pointer;
+}
+
+.rating-box__rating:hover,
+.rating-box__rating:active {
+  background-color: hsl(217, 12%, 63%);
+  color:white;
+}
+
+.rating-box__rating.chosen {
+  color: black;
+  background-color: hsl(25, 97%, 53%);
+  cursor:pointer;
+}
+
+#rating-box__submit-button {
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  text-align: center;
+  vertical-align: middle;
+  padding: 1rem;
+  border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+#rating-box__submit-button:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 2px white;
+}
+
+#rating-box__submit-button:active {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+#rating-box__submit-button[disabled],
+#rating-box__submit-button[disabled]:hover,
+#rating-box__submit-button[disabled]:active {
+  background-color: hsl(215, 12%, 29%);
+  color: hsl(217, 12%, 63%);
+  cursor:not-allowed;
+  pointer-events: none;
+}
+
+.thanks-box__main {
+  display:none;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.thanks-box__rating {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(215, 12%, 29%);
+  padding:0.7rem 1rem;
+  border-radius:50px;
+  margin-top:1rem;
+}
+
+footer {
+  display:none;
+}
+
+@media (min-width:40rem) {
+  .rating-box__main,
+  .thanks-box__main {
+  width:50%;
+  height:75%;
+}
