@@ -6,9 +6,9 @@ const USER_RATING_3 = document.querySelector('#rating3');
 const USER_RATING_4 = document.querySelector('#rating4');
 const USER_RATING_5 = document.querySelector('#rating5');
 let userRatingChoice = document.querySelectorAll('.rating-box__rating');
+let userRatingChoiceSelected = document.querySelectorAll('.chosen');
 let finalRating = document.querySelector('final-rating');
 const SUBMIT_BUTTON = document.querySelector('#rating-box__submit-button');
-
 
 USER_RATING_1.addEventListener('click', function() {
   USER_RATING_1.className = 'rating-box__rating chosen';
