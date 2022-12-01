@@ -3,30 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
+  <header>
+    <div class="background-solid"></div>
+    <div class="background-image__mobile"></div>
+    <div class="background-image__desktop"></div>
+    <img class="logo-image" src="./images/logo.svg" alt="Huddle logo">
+  </header>
 
-  Build The Community Your Fans Will Love
+  <main>
+      <img class="illustration-mockups" src="./images/illustration-mockups.svg" alt="Illustration mockups">
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+      <h1 class="slogan">Build The Community Your Fans Will Love</h1>
+      <div class="presentation">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+      Create connections with your users as you engage in genuine discussion. </div>
 
-  Register
+      <div class="register-button"><button>Register</button></div>
+  </main>
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/stagnant-sys">stagnant-sys</a>.
     </p>
   </footer>
 </body>

@@ -1,0 +1,49 @@
+html {
+  background-color: #674baf;
+  width: 100%;
+  height: 100%;
+  z-index: -2; }
+
+body {
+  box-sizing: border-box; }
+
+.background-solid {
+  background-color: #674baf;
+  width: 100%;
+  height: 100%;
+  z-index: -2; }
+
+.background-image__mobile {
+  background: url("./images/bg-mobile.svg");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1; }
+
+.logo-image {
+  max-width: 10rem; }
+
+.illustration-mockups {
+  max-width: 100%; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.slogan {
+  text-align: center; }
+
+.register-button {
+  display: flex;
+  justify-content: center; }
+
+.presentation {
+  text-align: center; }
+
+.attribution {
+  display: none; }
+
+/*# sourceMappingURL=styles.css.map */
