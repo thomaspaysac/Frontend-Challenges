@@ -62,11 +62,12 @@ USER_RATING_5.addEventListener('click', function() {
 
 for (let i=0; i < userRatingChoice.length; i++) {
   userRatingChoice[i].addEventListener('click', function() {
-    SUBMIT_BUTTON.removeAttribute('disabled');;
+    SUBMIT_BUTTON.removeAttribute('disabled');
   })
 }
 
 SUBMIT_BUTTON.addEventListener('click', function() {
   RATING_BOX.style.display = 'none';
   THANKS_BOX.style.display = 'flex';
+  SUBMIT_BUTTON.setAttribute('disabled', '');
 })
